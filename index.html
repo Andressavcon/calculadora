@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <div id="form">
+      <div class="header">
+        <img src="./stitch.png" alt="stitch" />
+      </div>
+      <form name="formulario">
+        <table>
+          <tr>
+            <td colspan="4">
+              <input
+                type="text"
+                maxlength="12"
+                class="resultado"
+                name="tela"
+                readonly
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="button"
+                value="C"
+                class="botao azul-escuro"
+                onclick="limparTela()"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="del"
+                class="botao azul-escuro"
+                onclick="deletar()"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="-"
+                class="botao azul-escuro"
+                onclick="inserir('-')"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                class="botao azul-escuro"
+                onclick="inserir('+')"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input
+                type="button"
+                value="1"
+                class="botao"
+                onclick="inserir(1)"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="2"
+                class="botao"
+                onclick="inserir(2)"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="3"
+                class="botao"
+                onclick="inserir(3)"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="/"
+                class="botao azul-escuro"
+                onclick="inserir('/')"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input
+                type="button"
+                value="4"
+                class="botao"
+                onclick="inserir(4)"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="5"
+                class="botao"
+                onclick="inserir(5)"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="6"
+                class="botao"
+                onclick="inserir(6)"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="*"
+                class="botao azul-escuro"
+                onclick="inserir('*')"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input
+                type="button"
+                value="7"
+                class="botao"
+                onclick="inserir(7)"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="8"
+                class="botao"
+                onclick="inserir(8)"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="9"
+                class="botao"
+                onclick="inserir(9)"
+              />
+            </td>
+            <td rowspan="2">
+              <input
+                type="button"
+                value="="
+                class="botao total azul-escuro"
+                onclick="calcularTotal()"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <input
+                type="button"
+                value="0"
+                class="botao zero"
+                onclick="inserir(0)"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="."
+                class="botao"
+                onclick="inserir('.')"
+              />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
