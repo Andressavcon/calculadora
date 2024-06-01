@@ -9,7 +9,7 @@
 img {
   position: absolute;
   width: 7.5rem;
-  top: 2.5rem;
+  top: 7.5rem;
 }
 
 .resultado {
@@ -43,7 +43,7 @@ img {
   width: 22.5rem;
   height: 30rem;
   padding: 2rem 2rem;
-  margin: 1.25rem auto;
+  margin: 6.25rem auto;
   border-radius: 0.75rem;
 }
 
